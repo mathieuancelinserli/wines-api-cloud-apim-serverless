@@ -8,7 +8,19 @@
   "tags": [
     {
       "name":"likes",
-      "description": "Everything related to likes on wines"
+      "description": "Everything related to likes on wines. The application can store the wines you like"
+    },
+    {
+      "name":"comments",
+      "description": "Everything related to comments on wines"
+    },
+    {
+      "name":"regions",
+      "description": "Everything related to regions where wines are made"
+    },
+    {
+      "name":"wines",
+      "description": "Everything related to wines"
     }
   ],
   "paths": {
@@ -328,7 +340,8 @@
         "description": "This endpoint returns the comments for one wine",
         "operationId": "getWineCommentsById",
         "tags": [
-          "wines"
+          "wines",
+          "comments"
         ],
         "responses": {
           "200": {
