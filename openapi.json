@@ -5,7 +5,12 @@
     "version": "1.0.0",
     "description": "# Wines API\n\nThis API powers the https://github.com/react-bootcamp reboot for 2024"
   },
-  "tags": [],
+  "tags": [
+    {
+      "name":"likes",
+      "description": "Everything related to likes on wines"
+    }
+  ],
   "paths": {
     "/api/likes": {
       "get": {
