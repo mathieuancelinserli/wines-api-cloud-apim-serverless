@@ -570,7 +570,7 @@
           "include": [],
           "exclude": [],
           "config": {
-            "duration": 800
+            "duration": 500
           }
         },
         {
