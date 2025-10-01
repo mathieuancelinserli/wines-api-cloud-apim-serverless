@@ -16,7 +16,7 @@ This API is open to everyone and is available on [https://${environment.HOST}/ap
 If you want to try the API, you can retrieve all wines regions just like that:
  
 ```sh
-curl -X GET -H "Authorization: Bearer {apikey}" \
+curl -X GET -H "Authorization: Bearer otoapk_01k*****" \
   https://${environment.HOST}/api/regions | jq
 
 [
@@ -34,7 +34,7 @@ curl -X GET -H "Authorization: Bearer {apikey}" \
 then you can get all the wines from a specific region like :
 
 ```sh
-curl -X GET -H "Authorization: Bearer {apikey}" \
+curl -X GET -H "Authorization: Bearer otoapk_01k*****" \
   https://${environment.HOST}/api/wines?region=Bordeaux | jq
 
 [
@@ -74,7 +74,7 @@ curl -X GET -H "Authorization: Bearer {apikey}" \
 then you can get all the wines from a specific region like :
 
 ```sh
-curl -X GET -H "Authorization: Bearer {apikey}" \
+curl -X GET -H "Authorization: Bearer otoapk_01k*****" \
   https://${environment.HOST}/api/wines/chevrol-bel-air | jq
 
 {
