@@ -14,7 +14,7 @@ This API is open to everyone and is available on [https://${environment.HOST}/ap
 ## Fetch all wine regions
 
 If you want to try the API, you can retrieve all wines regions just like that:
-
+ 
 ```sh
 curl -X GET -H "Authorization: Bearer {apikey}" \
   https://${environment.HOST}/api/regions | jq
