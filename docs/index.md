@@ -16,7 +16,7 @@ This API is open to everyone and is available on [https://${environment.HOST}/ap
 If you want to try the API, you can retrieve all wines regions just like that:
 
 ```sh
-curl -X GET https://${environment.HOST}/api/regions | jq
+curl -X GET -H "Authorization: Bearer {apikey}" https://${environment.HOST}/api/regions | jq
 
 [
   "Bordeaux",
@@ -33,7 +33,7 @@ curl -X GET https://${environment.HOST}/api/regions | jq
 then you can get all the wines from a specific region like :
 
 ```sh
-curl -X GET https://${environment.HOST}/api/wines?region=Bordeaux | jq
+curl -X GET -H "Authorization: Bearer {apikey}" https://${environment.HOST}/api/wines?region=Bordeaux | jq
 
 [
   {
@@ -72,7 +72,7 @@ curl -X GET https://${environment.HOST}/api/wines?region=Bordeaux | jq
 then you can get all the wines from a specific region like :
 
 ```sh
-curl -X GET https://${environment.HOST}/api/wines/chevrol-bel-air | jq
+curl -X GET -H "Authorization: Bearer {apikey}" https://${environment.HOST}/api/wines/chevrol-bel-air | jq
 
 {
   "id": "chevrol-bel-air",
