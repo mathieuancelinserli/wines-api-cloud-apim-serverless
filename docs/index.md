@@ -73,7 +73,8 @@ curl -X GET -H "Authorization: Bearer {apikey}" \
 then you can get all the wines from a specific region like :
 
 ```sh
-curl -X GET -H "Authorization: Bearer {apikey}" https://${environment.HOST}/api/wines/chevrol-bel-air | jq
+curl -X GET -H "Authorization: Bearer {apikey}" \
+  https://${environment.HOST}/api/wines/chevrol-bel-air | jq
 
 {
   "id": "chevrol-bel-air",
