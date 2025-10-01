@@ -654,6 +654,13 @@
             "wipe_backend_request": true,
             "update_quotas": true
           }
+        },
+        {
+          "plugin": "cp:otoroshi.next.plugins.SendOtoroshiHeadersBack",
+          "enabled": true,
+          "include": [],
+          "exclude": [],
+          "config": {}
         }
       ]
     },
