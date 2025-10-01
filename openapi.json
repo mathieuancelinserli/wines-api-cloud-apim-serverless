@@ -7,19 +7,19 @@
   },
   "tags": [
     {
-      "name":"likes",
+      "name": "likes",
       "description": "Everything related to likes on wines. The application can store the wines you like"
     },
     {
-      "name":"comments",
+      "name": "comments",
       "description": "Everything related to comments on wines"
     },
     {
-      "name":"regions",
+      "name": "regions",
       "description": "Everything related to regions where wines are made"
     },
     {
-      "name":"wines",
+      "name": "wines",
       "description": "Everything related to wines"
     }
   ],
@@ -598,6 +598,61 @@
             "expression": "${req.ip}",
             "daily_quota": 10000,
             "monthly_quota": 10000
+          }
+        },
+        {
+          "plugin": "cp:otoroshi.next.plugins.ApikeyCalls",
+          "enabled": true,
+          "include": [],
+          "exclude": [],
+          "config": {
+            "extractors": {
+              "basic": {
+                "enabled": true,
+                "header_name": null,
+                "query_name": null,
+                "cookie_name": null,
+                "path_name": null
+              },
+              "custom_headers": {
+                "enabled": true,
+                "client_id_header_name": null,
+                "client_secret_header_name": null
+              },
+              "client_id": {
+                "enabled": true,
+                "header_name": null,
+                "query_name": null,
+                "cookie_name": null,
+                "path_name": null
+              },
+              "jwt": {
+                "enabled": true,
+                "secret_signed": true,
+                "keypair_signed": true,
+                "include_request_attrs": false,
+                "max_jwt_lifespan_sec": null,
+                "header_name": null,
+                "query_name": null,
+                "cookie_name": null,
+                "path_name": null
+              },
+              "oto_bearer": {
+                "enabled": true,
+                "header_name": null,
+                "query_name": null,
+                "cookie_name": null,
+                "path_name": null
+              }
+            },
+            "routing": {
+              "enabled": false
+            },
+            "validate": true,
+            "mandatory": true,
+            "pass_with_user": false,
+            "wipe_backend_request": true,
+            "update_quotas": true
           }
         }
       ]
